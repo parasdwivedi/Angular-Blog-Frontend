@@ -1,0 +1,18 @@
+#inputname, #inputcomment {
+    display: block;
+
+    padding-left: 20px;
+    font-size: 15px;
+    width:100%;
+}
+#inputname {
+    height: 60px;
+}
+
+
+#inputbutton {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+    width:20%;
+}

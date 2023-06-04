@@ -1,0 +1,58 @@
+<div class="card">
+  <div class="card-body">
+    <div class="text-center mt-3 mb-5">
+      <h3>SUBSCRIPTION FORM</h3>
+      <p class="m auto subs-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+        deserunt, quidem esse molestias similique aliquid animi. Esse, rerum
+        eveniet vel quasi odit obcaecati, necessitatibus voluptatum nihil, minus
+        laudantium ullam? Cupiditate.
+      </p>
+      <form
+        class="form-inline mb-5 mt-2"
+        #subForm="ngForm"
+        (ngSubmit)="onSubmit(subForm.value, subForm)"
+      >
+        <div id="input-text" class="form-group col-md-5">
+          <input
+            id="subscribe-name"
+            type="text"
+            class="form-control shadow-effect"
+            placeholder="Your Name"
+            name="name"
+            required
+            #name="ngModel"
+            ngModel
+          />
+          <!-- <div class="text-danger" *ngIf="name.touched && name.invalid">
+            <div>Name is required</div>
+          </div> -->
+        </div>
+        <div id="input-email" class="form-group col-md-5">
+          <input
+            id="subscribe-email"
+            type="email"
+            class="form-control shadow-effect"
+            placeholder="Email Address"
+            name="email"
+            ngModel
+            required
+            email
+            #email="ngModel"
+          />
+          <!-- <div class="text-danger" *ngIf="email.touched && email.invalid">
+            <div >Name is required</div>
+          </div> -->
+        </div>
+        <div id="button-submit" class="col-md-2">
+          <button
+            class="btn btn-info btn-block btn-theme"
+            [disabled]="subForm.invalid"
+          >
+            SUBSCRIBE
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

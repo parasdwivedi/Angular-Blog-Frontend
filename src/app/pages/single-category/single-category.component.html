@@ -1,0 +1,19 @@
+<div class="bg-theme p-5">
+  <div class="container">
+    <h1 class="text-white">{{ categoryObj.category }}</h1>
+    <p class="text-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, soluta
+      perspiciatis officia alias eius assumenda fugiat aspernatur consectetur
+      quos hic nostrum, illo possimus? Quibusdam corporis voluptatibus,
+      voluptatem maiores similique omnis.
+    </p>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-4 mb-5" *ngFor="let post of postArray">
+      <app-post-card [postData]="post"></app-post-card>
+    </div>
+  </div>
+</div>

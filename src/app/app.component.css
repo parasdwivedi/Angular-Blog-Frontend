@@ -1,0 +1,10 @@
+.app-body {
+    min-height: 35vh;
+    padding-top: 50px;
+    /* margin: 50px; */
+}
+
+#subs-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

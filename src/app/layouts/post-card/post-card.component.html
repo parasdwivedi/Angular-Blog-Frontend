@@ -1,0 +1,28 @@
+<div
+  class="card mt-5"
+  *ngIf="postData"
+  [routerLink]="['/post', postCategory, id]"
+>
+  <img src="{{ postLink }}" alt="post-image" class="card-img-top" />
+  <div class="card-body">
+    <small class="bg-light text-danger text-center">{{ postCategory }}</small>
+    <small
+      class="ml-3 bg-light text-success text-center ms-2"
+      *ngIf="isFeatured"
+      >Featured</small
+    >
+    <small class="ml-3 bg-light text-info text-center ms-2"
+      >Views - {{ views }}</small
+    >
+    <h2 class="mt-1">{{ title }}</h2>
+    <div class="content-container">
+      <p class="overflow-control">
+        {{ content }}
+      </p>
+    </div>
+
+    <small class="bg-light text-warning text-center ml-3">
+      Last Updated {{ updatedAt | date }}
+    </small>
+  </div>
+</div>
